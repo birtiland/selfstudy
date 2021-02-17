@@ -1,0 +1,27 @@
+GET /api/getBuildingList	#目前还无测试服务器
+{
+    "error_code":-1,
+    "message": "success",
+    "data":[
+        {
+            "building_id":"0015",
+            "building":"23楼",
+            "campus_id":"1",
+            "areas":[
+                {
+	    "area_id": "A",	//区分AB区
+	    "classrooms": [
+	        {
+		"classroom_id": "23102",
+		"classroom": "102",
+		"capacity": "135"
+	        },
+	        ...
+	    ],
+	},
+	...
+            ],
+        },
+        ...
+    ]
+}
