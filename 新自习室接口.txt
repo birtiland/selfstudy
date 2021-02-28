@@ -17,10 +17,38 @@ GET /api/getBuildingList	#目前还无测试服务器
 		"capacity": "135"
 	        },
 	        ...
-	    ],
+	    ]
 	},
 	...
             ],
+        },
+        ...
+    ]
+}
+
+GET /api/getDayData?term=18191&week=9&day=6
+{
+    "error_code": 0,
+    "message": "success",
+    "data": [
+        {
+            "building_id": "0015",
+            "building":"23楼",
+            "campus_id":"1",
+            "areas": [
+	{
+	    "area_id": "-1",
+	    "classrooms": [
+	        {
+	            "classroom_id": "23102",
+	            "status":"000000000000",
+	            "classroom": "102"
+	        },
+	        ...
+	    ]
+	},
+	...
+            ]
         },
         ...
     ]
