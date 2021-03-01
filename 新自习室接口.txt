@@ -1,4 +1,5 @@
-GET /api/getBuildingList	#目前还无测试服务器
+GET https://selfstudy.twt.edu.cn/getBuildingList	
+#获取所有教学楼信息
 {
     "error_code":-1,
     "message": "success",
@@ -26,7 +27,8 @@ GET /api/getBuildingList	#目前还无测试服务器
     ]
 }
 
-GET /api/getDayData?term=18191&week=9&day=6
+GET https://selfstudy.twt.edu.cn/getDayData/18191/9/6	/term/week/day	
+#获取当日可上自习的教室，该教室的一周内信息都会返回
 {
     "error_code": 0,
     "message": "success",
