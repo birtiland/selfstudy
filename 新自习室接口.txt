@@ -55,3 +55,19 @@ GET https://selfstudy.twt.edu.cn/getDayData/18191/9/6	/term/week/day
         ...
     ]
 }
+
+
+//以下是前端接口
+POST /login/common	#账号密码方式登录
+{
+    "account": "3019******",	#学号或昵称或邮箱（好像手机号也可以）
+    "password": "123abc"	#密码
+}
+{
+    "error_code": 0,
+    "message": "登录成功",
+    "data": {
+        "token": "...",
+        "userNumber": "3019******"	#学号
+    }
+}
