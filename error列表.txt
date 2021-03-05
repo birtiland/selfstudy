@@ -3,6 +3,7 @@ error_code: 1	#目前错误代码包含的错误信息多，有待筛选分类�
 error_code: 2	#getDayData接口未查到符合参数条件的数据，目前记为范围超时间域，表示该参数时间所有教室都无占用
 error_code: 5	#无ticket或domain
 error_code: 6	#错误的app_key或app_secret
+error_code: 7	#无token，请登录获取token
 
 //以下是前端部分
 error_code: 3	#（登录接口）用户不存在
