@@ -83,7 +83,20 @@ GET	/getCollections	#获取收藏的教室
 {
     "error_code": 0,
     "message": "获取成功",
-    "data": ["23102", "23103"]	#classroom_id组成的数组
+    "data": {
+        "classroom_id": ["23102","23103"]		#classroom_id组成的数组
+    }
+}
+
+
+POST	/deleteCollection	#删除某收藏的教室
+{
+    "classroom_id": "23102"
+}
+{
+    "error_code": 0,
+    "message": "删除成功",
+    "data": null
 }
 
 
