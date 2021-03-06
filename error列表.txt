@@ -5,6 +5,8 @@ error_code: 5	#无ticket或domain
 error_code: 6	#错误的app_key或app_secret
 error_code: 7	#无token，请登录获取token
 error_code: 8	#token失效，请重新登录获取token
+error_code: 9	#收藏列表为空
+error_code: 10	#（删除收藏时）无此收藏，删除失败
 
 //以下是前端部分
 error_code: 3	#（登录接口）用户不存在

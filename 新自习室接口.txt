@@ -68,7 +68,7 @@ header中还应含有以下字段
 */
 
 
-POST	/addCollectin	#添加收藏教室
+POST	https://selfstudy.twt.edu.cn/addCollectin	#添加收藏教室
 {
     "classroom_id": "23102"
 }
@@ -79,7 +79,7 @@ POST	/addCollectin	#添加收藏教室
 }
 
 
-GET	/getCollections	#获取收藏的教室
+GET	https://selfstudy.twt.edu.cn/getCollections	#获取收藏的教室
 {
     "error_code": 0,
     "message": "获取成功",
@@ -89,7 +89,7 @@ GET	/getCollections	#获取收藏的教室
 }
 
 
-POST	/deleteCollection	#删除某收藏的教室
+POST	https://selfstudy.twt.edu.cn/deleteCollection	#删除某收藏的教室
 {
     "classroom_id": "23102"
 }
@@ -101,7 +101,7 @@ POST	/deleteCollection	#删除某收藏的教室
 
 
 //以下是前端接口，当然，这几个接口不要求token，但是也要求domain和ticket
-POST	/login/common	#账号密码方式登录
+POST	https://selfstudy.twt.edu.cn/login/common	#账号密码方式登录
 {
     "account": "3019******",	#学号或昵称或邮箱（好像手机号也可以）
     "password": "123abc"	#密码
@@ -115,7 +115,7 @@ POST	/login/common	#账号密码方式登录
     }
 }
 
-POST	/login/phoneMsg	#获取手机短信验证码（用以短信登录）
+POST	https://selfstudy.twt.edu.cn/login/phoneMsg	#获取手机短信验证码（用以短信登录）
 {
     "phone": "12345678910"
 }
@@ -125,7 +125,7 @@ POST	/login/phoneMsg	#获取手机短信验证码（用以短信登录）
     "data": null
 }
 
-POST	/login/phone	#验证短信验证码进行登录
+POST	https://selfstudy.twt.edu.cn/login/phone	#验证短信验证码进行登录
 {
     "phone": "12345678910",
     "code": "1234"
