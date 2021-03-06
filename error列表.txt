@@ -4,6 +4,7 @@ error_code: 2	#getDayData接口未查到符合参数条件的数据，目前记�
 error_code: 5	#无ticket或domain
 error_code: 6	#错误的app_key或app_secret
 error_code: 7	#无token，请登录获取token
+error_code: 8	#token失效，请重新登录获取token
 
 //以下是前端部分
 error_code: 3	#（登录接口）用户不存在
