@@ -68,7 +68,7 @@ header中还应含有以下字段
 */
 
 
-POST	https://selfstudy.twt.edu.cn/addCollectin	#添加收藏教室
+POST	https://selfstudy.twt.edu.cn/addCollection	#添加收藏教室
 {
     "classroom_id": "23102"
 }
