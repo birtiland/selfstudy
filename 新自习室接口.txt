@@ -115,6 +115,7 @@ POST	https://selfstudy.twt.edu.cn/login/common	#账号密码方式登录
     }
 }
 
+
 POST	https://selfstudy.twt.edu.cn/login/phoneMsg	#获取手机短信验证码（用以短信登录）
 {
     "phone": "12345678910"
@@ -122,9 +123,13 @@ POST	https://selfstudy.twt.edu.cn/login/phoneMsg	#获取手机短信验证码（
 {
     "error_code": 0,
     "message": "发送成功",
-    "data": null
+    "data": {
+        "Cookie": "JSESSIONID=EC4A08D6DD529888328B5A256D68360F"	#name=value
+    }
 }
 
+
+//这个接口需要将上一个接口的Cookie写进header
 POST	https://selfstudy.twt.edu.cn/login/phone	#验证短信验证码进行登录
 {
     "phone": "12345678910",
