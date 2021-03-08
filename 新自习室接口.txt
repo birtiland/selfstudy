@@ -58,6 +58,25 @@ GET	https://selfstudy.twt.edu.cn/getDayData/18191/9/6	/term/week/day
 }
 
 
+GET	https://selfstudy.twt.edu.cn/getWeekData/20212/1/23102	/term/week/classroom_id
+#获取某教室一周内信息
+{
+    "error_code": 0,
+    "message": "获取成功",
+    "data": [
+        {
+            "day": 1,
+            "status": "000000000000"
+        },
+        {
+            "day": 2,
+            "status": "000000000000"
+        },
+        ...
+    ]
+}
+
+
 /*
 以下接口在访问时需要在header中添加token字段，值为登录获取的token
 header中还应含有以下字段
